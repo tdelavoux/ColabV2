@@ -1,0 +1,66 @@
+/*------------- STYLE RESET BASICS ----------------*/
+ul{list-style-type: none;padding:0;margin:0;}
+a, ul, li, form {margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;vertical-align: baseline;}
+a, a:hover{color:#5e5d5d;text-decoration: none;}
+a[role="button"]{cursor: pointer;}
+button{box-shadow: none;}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button { -webkit-appearance: none;margin: 0;}
+input{outline:none;}
+input[type=number] {-moz-appearance: textfield;}
+span[role=button]{cursor: pointer;}
+i{margin:0 0.5em;}
+
+body,html{width:100%;height:100%; max-height:100%;overflow:hidden;margin:0;font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
+#content-login{width:100%;height:100%;max-height:100%;overflow:hidden;display:flex;margin:0;padding:0;background-color:#fff;}
+
+/* ------------  2 Blocs --------------------------*/
+#login-Page-left{height:100%; min-width: 700px}
+#login-Page-right{
+    height:100%; 
+    flex:1;
+    background-image:url("../img/login.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#inscription-Page-right{
+    height:100%; 
+    flex:1;
+    background-image:url("../img/inscription.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.login-link{color:dodgerblue;}
+
+.w-100{width:100%}
+/* ------------  Bloc Gauche --------------------------*/
+
+#login-Page-101{min-width:450px;display: flex; justify-content: center; align-items: center; height:100%; }
+h3{padding-bottom: 0.5em;border-bottom: solid 1px #d1d1d1;}
+.form101-line{ display: flex;}
+img{ margin: 0 1em;}
+#centered-bloc{
+	padding: 1em;
+	vertical-align: middle;
+	margin-top: -1em;
+    min-width:400px;
+}
+
+.inscription-content{
+    display:flex;
+    padding:0;
+}
+
+@media only screen and (max-width : 576px) {
+    .inscription-content{
+        flex-direction: column;
+    }
+    
+    #login-Page-left{width:100%;}
+    #inscription-Page-right{width:100%;}
+    #login-Page-right{width:100%;}
+}
