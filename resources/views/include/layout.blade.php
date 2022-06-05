@@ -24,7 +24,6 @@
    
         <script type="text/javascript" src="{{env('DIRLIB')}}jquery/jquery-3.5.1.min.js"></script>
         <script type="text/javascript" src="{{env('DIRLIB')}}atom/Atom/src/js/atom.min.js"></script>
-        {{-- <script type="text/javascript" src="{{asset('js/chatbot.js')}}"></script> --}}
         <script type="text/javascript" src="{{asset('js/app.js')}}"></script>
         <script type="text/javascript" src="{{asset('js/notifications.js')}}"></script>
         @yield('addJS')
