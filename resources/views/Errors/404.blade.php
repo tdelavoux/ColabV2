@@ -1,37 +1,16 @@
-<!doctype html>
-<html lang="fr">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <link rel="stylesheet" type="text/css" href="{{asset('css/404.css')}}">
-    </head>
+<link href="{{ asset('css/exceptions/404.css') }}" rel="stylesheet">
 
-    <body>
+<div class="mars"></div>
+<img src="{{ asset('img/404.svg') }}" class="logo-404" />
+<img src="{{ asset('img/meteor.svg') }}" class="meteor" />
+<p class="title">Oh non !!</p>
+<p class="subtitle">
+	Votre URL est incorrecte <br /> ou la page que vous demandez n'existe plus.
+</p>
+<div align="center">
+	<a class="btn-back" href="{{ route('logout') }}">Retour à l'accueil</a>
+</div>
+<img src="{{ asset('img/astronaut.svg') }}" class="astronaut" />
+<img src="{{ asset('img/spaceship.svg') }}" class="spaceship" />
 
-        <div class="bowl">
-            <div class="spdline"></div>
-            <div class="spider">
-                <div class="leg left-1"></div>
-                <div class="leg left-2"></div>
-                <div class="leg left-3"></div>
-                <div class="leg right-1"></div>
-                <div class="leg right-2"></div>
-                <div class="leg right-3"></div>
-            </div>
-        </div>
-            <div class="ghost">
-            <div class="eye eye-left"></div>
-            <div class="eye eye-right"></div>
-            <div class="chocolate"></div>
-            <div class="mouth"></div>
-        </div>
-        
-        <div class="signwood"></div>
-            <div class="signtext">
-            <p>404<br/>Page not found</p>
-        </div>
-        <div class="pin"></div>  
-        <div class="line"></div>
-    </body>
-</html>
-
+{{-- TODO revoir sur tailel d'écran les styles --}}
