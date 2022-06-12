@@ -1,0 +1,43 @@
+#content-page{display:flex; flex-direction: column;}
+.wiki-content{
+    flex:1;
+    display:flex;
+}
+.wiki-nav{
+    display: flex; flex-direction:column; max-height:100%; padding: 1em 0;min-width:220px; border-right:solid 1px var(--light-grey);
+}
+
+h2{font-size:27px; font-weight: bold;font-family: 'Baloo Bhaina 2', cursive;}
+h3{font-size:20px;font-weight: 600;font-family: 'Baloo Bhaina 2', cursive;}
+h3:before{content:'# ';color:var(--snuckle)}
+
+.wiki-nav-link{
+    color:var(--nv2);
+    text-transform:uppercase;
+    font-weight: 600;
+}
+.wiki-nav-link:hover{
+    color:var(--nv1);
+    background-color:var(--white);
+}
+.wiki-nav-sub-link{
+    margin: 0 0.3em 0 3em;
+    border-radius:0;
+    border-left:solid 2px var(--nv4);
+}
+.wiki-nav-sub-link:hover, .wiki-nav-sub-link.active{
+    color:var(--nv2);
+    background-color:var(--white);
+    text-decoration: underline;
+    border-left:solid 2px var(--nv2);
+}
+
+.wiki-page{
+    flex:1;
+    padding:1em 2em;
+}
+
+.wiki-separator{
+    border-bottom:solid 1px var(--light-grey);
+    width:100%;
+}
