@@ -15,10 +15,10 @@ i{margin:0 0.5em;}
 label{font-weight:bold; color:#929292}
 
 /*------------- CONTENT PAGE AND NAVS ----------------*/
-body,html{width:100%;height:100%; max-height:100%;overflow:hidden;margin:0;}
+body,html{width:100%;height:100%; max-height:100%;overflow:hidden;margin:0;font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size:13px;}
 body{display:flex;}
 #content{flex:1; width:100%;display:flex;flex-direction:column;}
-#content-page{flex:1; padding: 2em;overflow-y:auto;}
+#content-page{flex:1; /*padding: 2em;*/overflow-y:auto;}
 
 :root{
   --ntext:#fff;
@@ -30,13 +30,23 @@ body{display:flex;}
   --unread-bg : #f0f5ff;
 
   --white : #fff;
+  --very-light-grey: rgb(235, 236, 242);
   --light-grey : #e4e2e2;
   --middle-grey : #ddd8d8;
-  --shadow-grey : #aaa6a6;
+  --heavy-grey : #ada8a8;
+  --very-light-black : #979090;
+  --light-black : #504d4d;
+  --shadow-grey : #d0cfcf;
+
+  --p-light: #ada8a8;
+
+  --snuckle: #C15B78;
+
 }
 
 .logo-app{background-color:var(--nv4);}
-.sidenav{display: flex; flex-direction:column; max-height:100vh; background-color:var(--nv1);padding: 1em 0;min-width:220px;border-radius: 0 5px 5px 0;}
+.sidenav{display: flex; flex-direction:column; max-height:100vh; background-color:var(--nv1);padding: 1em 0;min-width:220px;border-radius: 0 5px 5px 0;font-size:14px;}
+.sidenav-separator{border-bottom: solid 1px var(--nv3);width:80%; margin: 1em auto;}
 .sidenav-header{color:var(--ntext);display:flex;align-items: center;justify-content: center;font-size: 25px;}
 .light-text{color:var(--nv4)}
 .sidenav-content{flex:1;display: flex; flex-direction:column; }
@@ -49,34 +59,8 @@ body{display:flex;}
 .topnav{display:flex;flex-direction:row-reverse;align-items: center; padding: 0.7em 1.5em;border-bottom:solid 1px var(--light-grey); color: var(--nv2);}
 .user-img{box-shadow: 10px 5px 35px 5px var(--shadow-grey);}
 .topnav-icons-bar{font-size: 20px;}
-
-
-/* ---------------- Chatbot content -------------------- */
-#chat-circle {position: fixed;bottom: 20px;right: 30px;}
-.chatbot-icon{box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.6), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);}
-#chatting-room {display:none;background: #efefef;position:fixed;right:40px;bottom:100px;  width:430px;max-width: 85vw;max-height:100vh;min-height:500px;border-radius:7px;box-shadow: 0px 5px 35px 9px var(--shadow-grey);}
-.chat-box-content{position: absolute;display:flex;flex-direction: column;height:100%;width:100%;border-radius:7px;}
-.chat-box-header{padding:1em;background-color:#6189BD;color:#fff;border-radius:7px 7px 0 0;}
-.chat-box-body{flex:1;overflow-y:auto;}
-.chat-footer{padding:0.3em 1em;background-color:#fff;}
-.text-input-chat {resize: none;color:#4f5050;font-family:"Times New Roman", Times, serif; }
-.bot-line, .user-line{display:flex;padding:1em;align-content: flex-end;}
-.user-line{justify-content: flex-end;align-content:flex-end;}
-.bot-bubble, .user-bubble{max-width: 250px;padding: 15px;border-radius: 15px;background: #579ffb;color:#fff;}
-.user-bubble{background-color:#2dac4f}
-.app-description{font-size:9px; font-style: italic}
-
-.dots-line{ display:flex;}
-.dots { margin: 0 2px; width: 8px; height: 8px; background-color: #fff; color: #fff; border-radius:50%; animation: typing 0.8s infinite linear;}
-.dots:nth-child(2) {  animation-delay: -0.2s;}
-.dots:nth-child(3) {  animation-delay: -0.4s;}
-@keyframes typing{
-    20% {transform: translateY(-2px)}
-    40% {transform: translateY(-5px)}
-    60% {transform: translateY(-2px)}
-    80% {transform: translateY(0)}
-}
-
+.bot-line-icon{display:flex; align-items: center;justify-content: center;}
+.topnav-search{min-width: 300px;}
 
 /* ---------------- notifications content -------------------- */
 
@@ -94,3 +78,46 @@ body{display:flex;}
 
 #notifcation-btn{position:relative;}
 #notifcation-btn::after{content:"\A";width:10px;height:10px;border-radius:50%;background: #579ffb;position:absolute;top:-5px;}
+
+
+
+
+/* ##############################################################################
+                                Coloration synaxique
+################################################################################# */
+
+/*Syntax Highlighter : Sublime Theme */
+
+.syntaxhighlighter {background-color: #2b303b !important;padding: 20px 30px;margin: 2em 0 1em 0 !important;border-radius:10px;width:95% !important;}
+.syntaxhighlighter a,
+.syntaxhighlighter div,
+.syntaxhighlighter code,
+.syntaxhighlighter table,
+.syntaxhighlighter table td,
+.syntaxhighlighter table tr,
+.syntaxhighlighter table tbody,
+.syntaxhighlighter table thead,
+.syntaxhighlighter table caption,
+.syntaxhighlighter textarea {line-height: 1.5em !important;}
+.syntaxhighlighter .line.alt1 {background-color: #2b303b !important;}
+.syntaxhighlighter .line.alt2 {background-color: #2b303b !important;}
+.syntaxhighlighter .string,
+.syntaxhighlighter .string a {color: #90be8c !important;}
+.syntaxhighlighter .color1,
+.syntaxhighlighter .color1 a {color: #d08770 !important;}
+.syntaxhighlighter .plain,
+.syntaxhighlighter .plain a {color: #c0c5ce !important;}
+.syntaxhighlighter .keyword {color: #bf616a !important;}
+.syntaxhighlighter .gutter {color: #757a84 !important;}
+.syntaxhighlighter .line.highlighted.alt1,
+.syntaxhighlighter .line.highlighted.alt2 {background-color: #333E49 !important;}
+.syntaxhighlighter .gutter .line.highlighted { background-color: #343d46 !important; color: #757a84 !important;}
+.syntaxhighlighter .value {color: #96b5b4 !important;}
+.syntaxhighlighter .color3,
+.syntaxhighlighter .color3 a {color: #b48ead !important;}
+.syntaxhighlighter .js.keyword {color: #b48ead !important;}
+.syntaxhighlighter .css.keyword {color: #4cc5f5 !important;}
+.syntaxhighlighter .css.value {color: #9f64cc !important;}
+.syntaxhighlighter .css.classes {color: #79c456 !important;}
+.syntaxhighlighter .css.namespaced{color: #cf5353 !important;}
+.syntaxhighlighter .css.actionMarker{ color: #cfc653 !important;}
