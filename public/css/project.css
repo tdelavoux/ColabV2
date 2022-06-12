@@ -1,0 +1,2 @@
+.timeline, .timeline a{color:var(--middle-grey); font-weight:500;}
+.timeline a:hover{text-decoration: underline;color:var(--shadow-grey)}
