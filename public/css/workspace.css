@@ -1,0 +1,18 @@
+.tab-title{font-size:24px; color:var(--shadow-grey); font-weight:500;margin:0 1em;}
+.tab-title.active{color:var(--nv3);}
+.tab-arg{font-size:14px;}
+
+.search-workspace-input, .search-workspace-input:focus{border-radius:15px;background-color:var(--very-light-grey);color:var(--heavy-grey);font-weight:600; padding: 10px 15px; border:none;}
+.search-workspace-input::placeholder{color:var(--heavy-grey)}
+.search-workspace-input:focus::placeholder{color:var(--middle-grey)}
+
+.workspace-card{display:flex; flex-direction:column;width:300px;border-radius:6px;border:solid 1px var(--light-grey);padding:1em}
+.workspace-card:hover{box-shadow: 10px 15px 32px 0px var(--light-grey);}
+.workspace-card-header{display:flex;font-weight:700;color:var(--light-black);}
+.workspace-card-content{flex:1;}
+.workspace-card-content, .workspace-card-footer{color:var(--heavy-grey);font-size:13px;}
+.progress{width:75px;}
+
+.owner-bloc{display:flex;}
+.owner-col{display:flex;flex-direction:column;justify-content:center;}
+.owner-name{color:var(--nv2); font-weight: 500;font-size: 14px;}
